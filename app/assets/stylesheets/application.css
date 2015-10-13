@@ -1,0 +1,74 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+ body {
+   font-family: 'Chewy', cursive;
+ }
+
+ h1 {
+   background-color: #002F4A;
+   color: white;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   padding: 20px;
+   padding-bottom: 10px;
+   font-size: 72px;
+   text-align: center;
+ }
+
+ .map {
+   width: 500px;
+   height: 500px;
+   display: block;
+   float: left;
+ }
+
+ .index {
+   display: block;
+   float: right;
+   width: 500px;
+   height: 500px;
+   overflow: scroll;
+ }
+
+ .search {
+   /*border-top: 3px solid #418D9E;*/
+   /*background-color: #FFFFF1;*/
+ }
+
+ .search:after {
+   content: "";
+   display: block;
+   clear: both;
+ }
+
+ .listing {
+   height: 200px;
+   width: 200px;
+   border: 1px solid #eee;
+   border-radius: 3px;
+   margin: 20px;
+   padding: 4px;
+   text-align: center;
+   float: right;
+   background-color: white;
+   box-shadow: 1px 1px 1px #ccc;
+ }
+
+ .listing:hover {
+   border: 1px solid #418D9E;
+ }
+
+input {
+  margin: 5px;
+  width: 100px;
+}
+
+form {
+  width: 100px;
+}
+
+.seat-filter {
+  float: left;
+}
