@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20151012212038) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "benches", force: :cascade do |t|
     t.text    "description", null: false
     t.float   "lat",         null: false
