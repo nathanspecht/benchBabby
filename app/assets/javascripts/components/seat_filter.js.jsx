@@ -1,5 +1,4 @@
 SeatFilter = React.createClass({
-  mixins: [LinkedStateMixin],
   getInitialState: function() {
     return { min: 1, max: 10 };
   },

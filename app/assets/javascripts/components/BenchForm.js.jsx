@@ -34,8 +34,7 @@ BenchForm = React.createClass({
           <input type="text"/>
           </label>
           <label>Description:
-          <input type="textarea"
-                 valueLink={this.linkState('description')} />
+          <input type="textarea"/>
           </label>
           <label>Number of Seats:
           <input type="text"/>
