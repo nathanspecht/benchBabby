@@ -1,8 +1,5 @@
-LinkedStateMixin = React.addons.LinkedStateMixin;
-Modal = React.addons.Modal;
 
 BenchForm = React.createClass({
-  mixins: [LinkedStateMixin, ReactRouter.History, Modal],
 
   getInitialState: function() {
     return { lat: this.props.location.query.lat,
@@ -29,26 +26,22 @@ BenchForm = React.createClass({
 
   render: function(){
     return (
-      <Modal isOpen={this.state.modalIsOpen}
-             onRequestClose={this.closeModal}>
         <form>
           <label>Latitude:
-          <input type="text" valueLink={this.linkState('lat')} />
+          <input type="text"/>
           </label>
           <label>Longitude:
-          <input type="text" valueLink={this.linkState('lng')} />
+          <input type="text"/>
           </label>
           <label>Description:
           <input type="textarea"
                  valueLink={this.linkState('description')} />
           </label>
           <label>Number of Seats:
-          <input type="text" valueLink={this.linkState('seats')} />
+          <input type="text"/>
           </label>
           <button onClick={this.addBench}>Add Bench</button>
         </form>
-      </Modal>
-
     );
   }
 });
