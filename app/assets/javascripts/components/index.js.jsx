@@ -16,12 +16,17 @@ Index = React.createClass({
   },
 
   render: function(){
+    var benches = this.state.benches.map(function(bench){
+      return <IndexListItem key={bench.id} bench={bench} />;
+    });
+    var count = benches.length;
     return (
-      <div className="index">{
-        this.state.benches.map(function(bench){
-          return <IndexListItem key={bench.id} bench={bench} />;
-        })
-      }</div>
+      <div className="results">
+        <h2>{count} benches found</h2>
+        <div className="index">
+          {benches}
+        </div>
+      </div>
     );
   }
 });

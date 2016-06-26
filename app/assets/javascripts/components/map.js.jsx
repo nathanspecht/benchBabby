@@ -65,7 +65,7 @@ Map = React.createClass({
     this.map = new google.maps.Map(map, mapOptions);
 
     this.map.addListener("idle", this._getBenches);
-    this.map.addListener("click", this.props.handleMapClick);
+    // this.map.addListener("click", this.props.handleMapClick);
     BenchStore.addChangeListener(this._mapChange);
     ActiveBenchStore.addChangeListener(this._activateBench);
   },

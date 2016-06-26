@@ -1,5 +1,5 @@
 ApiUtil = {
-  fetchBenches: function(params){
+  fetchBenches: function(params) {
     $.ajax({
       url: 'api/benches/index',
       type: 'get',

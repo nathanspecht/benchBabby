@@ -26,8 +26,10 @@ Search = React.createClass({
   render: function(){
     return(
       <div className="search">
-        <SeatFilter />
-        <Map handleMapClick={ this.handleMapClick }/>
+        <div className="map-filter">
+          <SeatFilter />
+          <Map handleMapClick={ this.handleMapClick }/>
+        </div>
         <Index />
       </div>
     );

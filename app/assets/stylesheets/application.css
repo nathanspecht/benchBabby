@@ -26,13 +26,15 @@
 
  .index {
    display: block;
-   float: right;
+   float: left;
    width: 500px;
    height: 500px;
    overflow: scroll;
  }
 
  .search {
+   margin: auto;
+   width: 1000px;
    /*border-top: 3px solid #418D9E;*/
    /*background-color: #FFFFF1;*/
  }
@@ -51,7 +53,7 @@
    margin: 20px;
    padding: 4px;
    text-align: center;
-   float: right;
+   float: left;
    background-color: white;
    box-shadow: 1px 1px 1px #ccc;
  }
@@ -71,4 +73,18 @@ form {
 
 .seat-filter {
   float: left;
+}
+
+.map-filter {
+  width: 500px;
+}
+
+.results {
+  float: left;
+  width: 500px;
+}
+
+h2 {
+  margin: 0px;
+  margin-left: 20px;
 }

@@ -8,7 +8,8 @@ BenchForm = React.createClass({
     return { lat: this.props.location.query.lat,
              lng: this.props.location.query.lng,
              seats: null,
-             description: null };
+             description: null,
+             };
   },
   componentDidMount: function(){
     BenchStore.addChangeListener(this.rootDirect);
@@ -28,6 +29,8 @@ BenchForm = React.createClass({
 
   render: function(){
     return (
+      <Modal isOpen={this.state.modalIsOpen}
+             onRequestClose={this.closeModal}>
         <form>
           <label>Latitude:
           <input type="text" valueLink={this.linkState('lat')} />
@@ -44,6 +47,8 @@ BenchForm = React.createClass({
           </label>
           <button onClick={this.addBench}>Add Bench</button>
         </form>
+      </Modal>
+
     );
   }
 });

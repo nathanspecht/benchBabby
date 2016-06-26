@@ -26,6 +26,6 @@ class Bench < ActiveRecord::Base
                  lng >= ? AND
                  seats >= ? AND
                  seats <= ?",
-                ne_lat, sw_lat, ne_lng, sw_lng, min, max)
+                 ne_lat, sw_lat, ne_lng, sw_lng, min, max)
   end
 end
