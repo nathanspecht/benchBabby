@@ -1,5 +1,3 @@
-LinkedStateMixin = React.addons.LinkedStateMixin;
-
 SeatFilter = React.createClass({
   mixins: [LinkedStateMixin],
   getInitialState: function() {
